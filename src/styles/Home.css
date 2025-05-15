@@ -1,0 +1,170 @@
+.home-section {
+  padding-top: 4rem;
+}
+
+.hero-content {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  animation: fadeIn 1s ease-in;
+}
+
+.greeting {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.name {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.1rem;
+  max-width: 550px;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(5px);
+}
+
+.ethos-card {
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  color: var(--text-secondary);
+  height: 100%;
+}
+
+.ethos-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.ethos-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: #0d1117;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #0d1117;
+  border: 2px solid transparent;
+}
+
+.btn-accent:hover {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn-icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(6px);
+}
+
+
+@media (max-width: 991.98px) {
+  .hero-content {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .name {
+    font-size: 3rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .description {
+    margin: 0 auto 2rem auto;
+  }
+  
+  
+}
+
+@media (max-width: 575.98px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
